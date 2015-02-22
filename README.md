@@ -1,2 +1,1 @@
-# Slides
 # samchow.github.io-
