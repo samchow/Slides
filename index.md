@@ -35,7 +35,7 @@ plot(diamonds$price ~ diamonds$carat)
 ```
 
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
-3. Factoring in the cut and color makes the problem more difficult. 
+2. Factoring in the cut and color makes the problem more difficult. 
 
 --- .class #id 
 
@@ -45,8 +45,8 @@ After some fine tuning we came up with using a combination of the following 4 li
 
 1. Linear fit through the origin based solely on the size
 2. linear fit (with intercept) based solely on size
-3. linear fit based on size and color
-4. linear fit based on size and cut
+3. linear fit (with intercept) based on size and color
+4. linear fit (with intercept) based on size and cut
 
 --- .class #id 
 
@@ -57,4 +57,6 @@ After some fine tunings, we ended with the following heuristics
 1. For diamond of size less than 1.0 carat, we use the maximum the first two estimates as the price.
 
 2. For diamond 1.0 carat or more, we compute average of the latter two estimates and use it only when it gives a higher estimate than the first.
+
+Check it out at: https://samchow.shinyapps.io/DevelopingDataProducts/
 
